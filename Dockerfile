@@ -1,11 +1,15 @@
 FROM python:3.10-slim
 
+RUN useradd -m -u 1000 user
+USER user
+ENV PATH="/home/user/.local/bin:$PATH"
+
 WORKDIR /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY --chown=user requirements.txt .
+RUN pip install --no-cache-dir streamlit langchain-groq langchain-community langchain-text-splitters chromadb pypdf python-dotenv langchain-core
 
-COPY . .
+COPY --chown=user . .
 
 EXPOSE 7860
 
