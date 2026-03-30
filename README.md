@@ -3,7 +3,7 @@
 Upload your syllabus PDF → AI generates a day-by-day study plan using RAG + Groq Llama-3.1.
 
 ## 🌐 Live Demo
-[Live App](https://dixithabv-ai-study-planner.hf.space)
+| 📚 AI Study Planner | RAG pipeline: PDF → ChromaDB → Groq Llama-3.1 → Study Plan | Python · LangChain · ChromaDB · Groq | [Live App](https://dixithabv-ai-study-planner.hf.space) |
 
 ## 🛠 Tech Stack
 - 🦙 Groq Llama-3.1
